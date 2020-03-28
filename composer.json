@@ -1,0 +1,42 @@
+{
+  "name": "christoph-jeworutzki/corcel-acf-plugin",
+  "description": "ACF plugin for Corcel",
+  "homepage": "http://github.com/ChristophJeworutzki/corcel-acf",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Christoph Jeworutzki"
+    },
+    {
+      "name": "Thomas Bruckmaier"
+    },
+    {
+      "name": "Junior Grossi",
+      "email": "juniorgro@gmail.com",
+      "homepage": "http://jgrossi.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0",
+    "jgrossi/corcel": "~2.5",
+    "greabock/tentacles": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0",
+    "orchestra/testbench": "~3.4",
+    "orchestra/database": "~3.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "ChristophJeworutzki\\CorcelACF\\": "src/",
+      "ChristophJeworutzki\\CorcelACF\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ChristophJeworutzki\\CorcelACF\\ServiceProvider"
+      ]
+    }
+  }
+}
