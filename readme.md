@@ -27,13 +27,7 @@ For more information about how Corcel works please visit [the repository](http:/
 
 # Installation
 
-To install the ACF plugin for Corcel is easy:
-
-```
-composer require ChristophJeworutzki/corcel-acf
-```
-
-Corcel is required for this plugin, but don't worry, if it's missing it will be installed as well.
+Coming soon…
 
 # Features
 
