@@ -46,7 +46,7 @@ class FlexibleContentLayout
      *
      * @return Collection
      */
-    public function getData() : string
+    public function getData() : Collection
     {
         return $this->data;
     }
