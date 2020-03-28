@@ -1,10 +1,5 @@
 # Corcel ACF Plugin
 
-[![Travis](https://travis-ci.org/ChristophJeworutzki/corcel-acf.svg?branch=master)](https://travis-ci.org/ChristophJeworutzki/corcel-acf?branch=master)
-[![StyleCI](https://github.styleci.io/repos/166053471/shield?branch=master)](https://github.styleci.io/repos/166053471)
-[![Packagist](https://img.shields.io/packagist/v/ChristophJeworutzki/corcel-acf.svg)](https://github.com/ChristophJeworutzki/corcel-acf/releases)
-[![Packagist](https://img.shields.io/packagist/dt/ChristophJeworutzki/corcel-acf.svg)](https://packagist.org/packages/ChristophJeworutzki/corcel-acf)
-
 > Fetch all Advanced Custom Fields (ACF) fields inside Corcel easily.
 
 This Corcel plugin allows you to fetch WordPress custom fields created by the [ACF](http://advancedcustomfields.com) plugin using the same syntax of Eloquent, from the [Laravel Framework](http://laravel.com). You can use Eloquent models and Collections to improve your development, using the WordPress backend with any PHP application.
@@ -27,6 +22,7 @@ For more information about how Corcel works please visit [the repository](http:/
     - [Repeater & Flexible Content](#repeater--flexible-content)
     - [Group field](#group-field)
 - [Running Tests](#running-tests)
+  - [Credentials](#credentials)
 - [Licence](#licence)
 
 # Installation
@@ -437,6 +433,10 @@ To run the phpunit tests, execute `phpunit`:
 ```
 ./vendor/bin/phpunit
 ```
+
+## Credentials
+
+- Thank you to the authors of the orginal versions, first of all [corcel-acf](https://github.com/tbruckmaier/corcel-acf) by [@tbruckmaier](https://github.com/tbruckmaier), [corcel/acf](https://github.com/corcel/acf) by [@jgrossi](https://github.com/jgrossi) and all the previous contributors.
 
 # Licence
 
