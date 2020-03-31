@@ -22,4 +22,14 @@ class GroupLayout
     {
         $this->data = $data;
     }
+    
+    /**
+     * Return this layout's data collection
+     *
+     * @return Collection
+     */
+    public function getData() : Collection
+    {
+        return $this->data;
+    }
 }
