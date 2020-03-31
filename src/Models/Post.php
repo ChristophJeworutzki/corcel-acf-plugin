@@ -6,7 +6,7 @@ use Corcel\Model\Post as CorcelPost;
 
 class Post extends BaseField
 {
-    use Traits\SerializedSometimes;
+    use Traits\Serialized, Traits\SerializedSometimes;
 
     /**
      * If "multiple" is checked, internal value is serialized
@@ -36,12 +36,12 @@ class Post extends BaseField
      */
     public function getValueAttribute()
     {
-        if ($this->is_serialized) {
-            // it would be nice if we could implement this as a hasMany()
-            // relation, but laravel does not support whereIn() in relationships
-            return $this->getSortedRelation(CorcelPost::class, $this->internal_value);
+
+        if ( $this->is_serialized( $this->internal_value) ) {
+            return $this->getSortedRelation(CorcelPost::class, unserialize($this->internal_value));
         }
 
         return $this->relationSingle;
     }
+
 }
