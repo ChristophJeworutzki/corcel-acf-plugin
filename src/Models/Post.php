@@ -17,7 +17,7 @@ class Post extends BaseField
     {
         return !empty(array_get($this->config, 'multiple'));
     }
-
+    
     /**
      * When only a single post can be selected, we use a relationship to fetch
      * it
@@ -38,9 +38,9 @@ class Post extends BaseField
     {
 
         if ( $this->is_serialized( $this->internal_value) ) {
-            return $this->getSortedRelation(CorcelPost::class, unserialize($this->internal_value));
+            return $this->getSortedRelation(CorcelPost::class, @unserialize($this->internal_value));
         }
-
+        
         return $this->relationSingle;
     }
 
